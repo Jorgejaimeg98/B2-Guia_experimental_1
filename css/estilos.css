@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    background: #6079bf;
+    background: linear-gradient(127deg, rgba(96, 121, 191, 1) 0%, rgba(29, 231, 253, 1) 50%, rgba(173, 108, 217, 1) 100%);
+    color: #333;
+    height: 100vh;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.title{
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
