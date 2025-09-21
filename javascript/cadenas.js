@@ -5,7 +5,7 @@ function contarCaracteres(palabra) {
     for (let i = 0; i < palabra.length; i++) {
         console.log(palabra[i]);
     }
-    console.log(`La palabra tiene ${palabra.length} caracteres`);
+    console.log(`La palabra '${palabra}' tiene ${palabra.length} caracteres`);
 }
 //let cadena = prompt("Ingrese una palabra");
 //contarCaracteres(cadena);
@@ -21,7 +21,7 @@ function contarApariciones(palabra, letra) {
             contador++;
         }
     }
-    console.log(`La letra ${letra} aparece ${contador} veces en la palabra ${palabra}`);
+    console.log(`La letra '${letra}' aparece ${contador} veces en la palabra '${palabra}'`);
 }
 //let cadena2 = prompt("Ingrese una palabra");
 //let letra = prompt("Ingrese una letra a buscar");
@@ -36,7 +36,7 @@ function invertirPalabra(palabra) {
     for (let i = palabra.length - 1; i >= 0; i--) {
         palabraInvertida += palabra[i];
     }
-    console.log(`La palabra invertida es: ${palabraInvertida}`);
+    console.log(`La palabra '${palabra}' invertida es: ${palabraInvertida}`);
 }
 //let cadena3 = prompt("Ingrese una palabra");
 //invertirPalabra(cadena3);
@@ -47,13 +47,13 @@ function invertirPalabra(palabra) {
 //debugger;
 function compararLongitudes(palabra1, palabra2) {
     if (palabra1.length > palabra2.length) {
-        console.log(`El apellido ${palabra1} tiene más letras`);
+        console.log(`La palabra '${palabra1}' tiene más letras que '${palabra2}'`);
     }
     else if (palabra1.length < palabra2.length) {
-        console.log(`El apellido ${palabra2} tiene más letras`);
+        console.log(`La palabra '${palabra2}' tiene más letras que '${palabra1}'`);
     }
     else {
-        console.log("Ambos apellidos tienen la misma longitud");
+        console.log(`La palabras '${palabra1}' y '${palabra2}' Ambas tienen la misma longitud`);
     }
 }
 //let cadena1 = prompt("Ingrese la primera palabra");
@@ -65,7 +65,7 @@ function compararLongitudes(palabra1, palabra2) {
 
 // Ejercicio 5: Iniciales de un nombre completo
 //debugger;
-function obtenerIniciales(nombreCompleto) {
+function inicialesNombre(nombreCompleto) {
     let palabras = nombreCompleto.split(" "); // split separa las palabras por espacios
     let iniciales = ""; 
     for (let i = 0; i < palabras.length; i++) {
@@ -74,9 +74,9 @@ function obtenerIniciales(nombreCompleto) {
     console.log(`Las iniciales son: ${iniciales}`);
 }
 //let nombre = prompt("Ingrese su nombre completo");
-//obtenerIniciales(nombre);
-//obtenerIniciales("jorge luis borges");
-//obtenerIniciales("ada lovelace");
+//inicialesNombre(nombre);
+//inicialesNombre("jorge Luis Jaime");
+//inicialesNombre("adalis Sugey Suarez");
 
 
 // Ejercicio 6: Reemplazar caracteres en una cadena
@@ -108,9 +108,9 @@ function esPalindromo(palabra) {
         palabraInvertida += palabra[i];
     }
     if (palabra === palabraInvertida) {
-        console.log(`La palabra ${palabra} es un palíndromo`);
+        console.log(`La palabra '${palabra}' es un palíndromo`);
     } else {
-        console.log(`La palabra ${palabra} no es un palíndromo`);
+        console.log(`La palabra '${palabra}' no es un palíndromo`);
     }
 }
 //let cadena5 = prompt("Ingrese una palabra").toLowerCase();
@@ -123,13 +123,13 @@ function esPalindromo(palabra) {
 //debugger;
 function fraseMasLarga(frase1, frase2) {
     if (frase1.length > frase2.length) {
-        console.log(`La frase ${frase1} tiene más cantidad de caracteres`);
+        console.log(`La frase '${frase1}' tiene más cantidad de caracteres`);
     }
     else if (frase1.length < frase2.length) {
-        console.log(`La frase ${frase2} tiene más cantidad de caracteres`);
+        console.log(`La frase '${frase2}' tiene más cantidad de caracteres`);
     }
     else {
-        console.log(`Ambas frases tienen la misma cantidad de caracteres`);
+        console.log(`Las frases '${frase1}' y '${frase2}' Ambas frases tienen la misma cantidad de caracteres`);
     }
 }
 //let frase1 = prompt("Ingrese la primera frase");
@@ -159,15 +159,15 @@ function contarCaracter(palabra, caracter) {
 
 // Ejercicio 10: Dividir oración en palabras
 //debugger;
-function dividirOracion(oracion) {
-    let palabras = oracion.split(" "); // split separa las palabras por espacios
+function dividirOracion(oraciones) {
+    let palabras = oraciones.split(" "); //.split(" ;") split separa las palabras por espacios
     console.log("Las palabras son:");
     for (let i = 0; i < palabras.length; i++) {
         console.log(palabras[i]);
     }
     console.log(`La oración tiene ${palabras.length} palabras`);
 }
-let oracion = prompt("Ingrese una oración");
-dividirOracion(oracion);
+//let oracion = prompt("Ingrese una oración");
+//dividirOracion(oracion);
 //dividirOracion("JavaScript es un lenguaje de programación");
 //dividirOracion("Me gusta aprender cosas nuevas");
